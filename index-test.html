@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta name="ROBOTS" content="INDEX,FOLLOW">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título da Página</title>
-    <script type="text/javascript">
-        // Extract MID from script URL
-        var scriptSrc = "https://510010053.collect.igodigital.com/collect.js";
-        var mid = scriptSrc.match(/https:\/\/(\d+)\.collect\.igodigital\.com/)[1];
-
-        // Dynamically insert the script with the MID
-        var script = document.createElement('script');
-        script.src = scriptSrc;
-        document.head.appendChild(script);
-
-        // Once the script is loaded, push the data
-        script.onload = function() {
-            _etmc.push(["setOrgId", mid]);
-            _etmc.mid = mid;
-            _etmc.push(["trackPageView", {"item": "9385"}]);
-        };
-    </script>
+    <script type="text/javascript" src="https://510010053.collect.igodigital.com/collect.js"></script>
 </head>
 <body>
-    <h1>OLA VITOR!</h1>
+    <h1>
+      OLA VITOR!
+  </h1>
     <h2>Bem-vindo à minha página!</h2>
-    <p>Este é um exemplo de uma página HTML básica.</p>
+    <p>Este é um exemplo de uma página HTML básica.</p>    
+    <script type="text/javascript">
+        _etmc.push(["setOrgId", "510010053"]);
+        _etmc.push(["trackPageView", {"item": "9385"}]);
+    </script>
 </body>
-<footer>
-</footer>
+  <footer>    
+ </footer>
 </html>
